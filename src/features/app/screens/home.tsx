@@ -3,13 +3,19 @@ import { Button, Platform, StyleSheet, View } from 'react-native';
 
 import { HelloWave } from '@components/HelloWave';
 import ParallaxScrollView from '@components/ParallaxScrollView';
-import { ThemedText } from '@components/ThemedText';
+import { ThemedText } from '@core/components/ThemedText';
 import { ThemedView } from '@components/ThemedView';
 import { ENVIRONMENT_NAME } from '@env';
+import NavigationHeader from '@core/components/NavigationHeader';
 
 export default function HomeScreen({ navigation }: any) {
   return (
     <View>
+      <NavigationHeader 
+        title='Home Screen'
+        showBackBtn={true}
+        rightBtnText="Save"
+      />
       <ThemedText>Home Screen</ThemedText>
       <Button title="Navigate to onboarding" onPress={() => {
         navigation.navigate("onboarding", {

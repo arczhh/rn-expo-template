@@ -23,6 +23,11 @@
       "output": "static",
       "favicon": "./src/assets/images/favicon.png"
     },
+    "splash": {
+      "image": "./src/assets/images/bg_splash_screen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
     "plugins": [
       "expo-router",
       [
@@ -37,6 +42,22 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
     }
   }
 }
