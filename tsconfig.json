@@ -3,9 +3,10 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@*": [
+        "./src/*"
+      ],
+      "@env": ["./.env.dev", "./.env.prod"],
     }
   },
   "include": [
